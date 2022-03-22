@@ -1,0 +1,45 @@
+
+@media (max-width: 970px) {
+    html{
+        font-size: 40%;
+    }
+
+    .container{
+        height: 60vh;
+    }
+
+    .container .conteudo{
+        width: 50%;
+        padding: 3%;
+        margin-left: 20%;
+    }
+
+    .conteudo h2 {
+        margin-bottom: 10%;
+    }
+    
+    .conteudo p {
+        font-size: 2.5rem;
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width: 740px) {
+    html{
+        font-size: 25%;
+    }
+
+    .container{
+        height: 30vh;
+    }
+
+    .conteudo p {
+        overflow-y: scroll;
+        height: 50px;
+    }
+
+    .seta-voltar img, .seta-avancar img {
+        width: 30px;
+        height: 30px;
+    }
+}

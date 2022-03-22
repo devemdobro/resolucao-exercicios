@@ -45,12 +45,12 @@
 }
 
 .seta-voltar {
-    left: 70px;
+    left: 4%;
     transform: rotateY(180deg);
 }
 
 .seta-avancar {
-    right: 70px;
+    right: 4%;
 }
 
 .seta-voltar img, .seta-avancar img {
@@ -103,40 +103,4 @@
 
 .azul a {
     color: #10ACDD;
-}
-
-@media (max-width: 970px) {
-    html{
-        font-size: 40%;
-    }
-
-    .container{
-        height: 60vh;
-    }
-
-    .container .conteudo{
-        width: 400px;
-        padding: 30px;
-    }
-
-    .conteudo h2 {
-        margin-bottom: 40px;
-    }
-    
-    .conteudo p {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-    }
-    
-    .conteudo a {
-        font-size: 3rem;        
-    }
-
-    .seta-voltar {
-        left: 60px;
-    }
-    
-    .seta-avancar {
-        right: 60px;
-    }
 }
