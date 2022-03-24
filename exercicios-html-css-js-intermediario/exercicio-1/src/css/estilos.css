@@ -23,19 +23,19 @@
     opacity: 1;
 }
 
-.imagem.rosa {
+.imagem.fundo-rosa {
     background-image: url(../imagens/4.jpg);
 }
 
-.imagem.verde {
+.imagem.fundo-verde {
     background-image: url(../imagens/1.jpg);
 }
 
-.imagem.laranja {
+.imagem.fundo-laranja {
     background-image: url(../imagens/3.jpg);
 }
 
-.imagem.azul {
+.imagem.fundo-azul {
     background-image: url(../imagens/2.jpg);
 }
 
@@ -53,7 +53,7 @@
     right: 4%;
 }
 
-.seta-voltar img, .seta-avancar img {
+.seta-voltar .imagem-seta, .seta-avancar .imagem-seta {
     width: 50px;
     height: 50px;
 }
@@ -63,19 +63,19 @@
     cursor: default;
 }
 
-.conteudo h2 {
+.conteudo .titulo {
     margin-bottom: 80px;
     font-size: 5rem;
     font-weight: 400;
 }
 
-.conteudo p {
+.conteudo .texto {
     font-size: 2.5rem;
     font-weight: 300;
     margin-bottom: 50px;
 }
 
-.conteudo a {
+.conteudo .botao {
     font-size: 3rem;
     font-weight: 700;
 }
@@ -89,18 +89,18 @@
     border-radius: 10px;
 }
 
-.rosa a {
+.botao.rosa {
     color: #C50000;
 }
 
-.verde a {
+.botao.verde {
     color: #D9DD10;
 }
 
-.laranja a {
+.botao.laranja {
     color: #A63A17;
 }
 
-.azul a {
+.botao.azul {
     color: #10ACDD;
 }
