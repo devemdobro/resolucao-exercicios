@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 * {
   margin: 0;
@@ -36,12 +36,10 @@ main {
 .acordeon .ilustracao {
   position: absolute;
   left: -90px;  
-  margin: 50px 0;
 }
 
 .acordeon .conteudo {  
-  width: 390px;
-  padding-bottom: 20px;
+  width: 390px;  
   padding-left: 225px;
 }
 
@@ -75,7 +73,7 @@ main {
   transition: 0.2s ease;
   font-size: 17px;
   width: 90%;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .item .pergunta:hover {
@@ -86,7 +84,7 @@ main {
   display: none;
   padding-bottom: 15px;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 /* ESTILOS DE ITEM DE acordeon ATIVO */
