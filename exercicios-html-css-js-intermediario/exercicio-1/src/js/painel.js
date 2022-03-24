@@ -1,13 +1,15 @@
-const imagens = document.querySelectorAll(".imagem");
+const imagens = document.querySelectorAll(".slide");
 const setaVoltar = document.getElementById("seta-voltar");
 const setaAvancar = document.getElementById("seta-avancar");
 
 let imagemAtual = 0;
 
 setaAvancar.addEventListener("click", function () {
-  if (imagemAtual !== imagens.length - 1) {
-    imagemAtual++;
+  if (imagemAtual === imagens.length - 1) {
+    return;
   }
+
+  imagemAtual++;
 
   esconderImagemAberta();
   mostrarImagem();
@@ -15,9 +17,11 @@ setaAvancar.addEventListener("click", function () {
 });
 
 setaVoltar.addEventListener("click", function () {
-  if (imagemAtual !== 0) {
-    imagemAtual--;
+  if (imagemAtual === 0) {
+    return;
   }
+
+  imagemAtual--;
 
   esconderImagemAberta();
   mostrarImagem();
@@ -34,21 +38,17 @@ function mostrarImagem() {
 }
 
 function mostrarOuEsconderSetas() {
-  //ver se a imagem atual é dirente de 0, se sim pode habilitar a seta de voltar
-  if (imagemAtual !== 0) {
+  const naoEhAPrimeiraImagem = imagemAtual !== 0;
+  if (naoEhAPrimeiraImagem) {
     setaVoltar.classList.remove("opacidade");
-  }
-  //se a imagem atual for igual a 0, se sim desabilita a seta de voltar
-  else if (imagemAtual === 0) {
+  } else {
     setaVoltar.classList.add("opacidade");
   }
 
-  //ver se a imagem atual é igual ao tamanho do array total de imagens, se sim pode esconder a seta de avancar
-  if (imagemAtual !== 0 && imagemAtual === imagens.length - 1) {
+  const chegouNaUltimaImagem = imagemAtual !== 0 && imagemAtual === imagens.length - 1;
+  if (chegouNaUltimaImagem) {
     setaAvancar.classList.add("opacidade");
-  }
-  //se a imagem atual for diferente do tamanho do array total de imagens, habilito a seta de avancar
-  else if (imagemAtual !== imagemAtual.length - 1) {
+  } else {
     setaAvancar.classList.remove("opacidade");
   }
 }

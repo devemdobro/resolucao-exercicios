@@ -1,11 +1,11 @@
-.container {
+.imagens-slides {
     position: relative;
     height: 100vh;
     display: flex;    
     align-items: center;    
 }
 
-.container .imagem {
+.imagens-slides .slide {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -19,24 +19,24 @@
     align-items: center;
 }
 
-.container .imagem.mostrar {
+.imagens-slides .slide.mostrar {
     opacity: 1;
 }
 
-.imagem.fundo-rosa {
-    background-image: url(../imagens/4.jpg);
+.slide-rosa {
+    background-image: url(../imagens/flores-rosas.jpg);
 }
 
-.imagem.fundo-verde {
-    background-image: url(../imagens/1.jpg);
+.slide-verde {
+    background-image: url(../imagens/flores-verdes.jpg);
 }
 
-.imagem.fundo-laranja {
-    background-image: url(../imagens/3.jpg);
+.slide-laranja {
+    background-image: url(../imagens/montanhas.jpg);
 }
 
-.imagem.fundo-azul {
-    background-image: url(../imagens/2.jpg);
+.slide-azul {
+    background-image: url(../imagens/lago.jpg);
 }
 
 .seta-voltar, .seta-avancar {

@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-weight: 300;
+  box-sizing: border-box;
 }
 
 html {
@@ -39,7 +40,7 @@ main {
 }
 
 .acordeon .conteudo {  
-  width: 390px;  
+  width: 90%;  
   padding-left: 225px;
 }
 
