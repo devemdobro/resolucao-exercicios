@@ -18,7 +18,6 @@ html {
 
 .pinturas .pintura img {
     width: 100%;
-    position: absolute;
 }
 
 .pinturas .pintura .informacoes {

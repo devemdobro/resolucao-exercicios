@@ -35,7 +35,6 @@ html {
 
 .propaganda {
     grid-area: propaganda;
-    height: 56px;
 }
 
 .videos-sugeridos {
@@ -46,7 +45,6 @@ html {
     display: flex;
     gap: 5px;
     margin-bottom: 15px;
-    max-width: 270px;
 }
 
 .videos-sugeridos .video .titulo {
@@ -56,4 +54,5 @@ html {
 
 .videos-sugeridos .video p {
     font-size: 11px;
+    margin-bottom: 5px;
 }
