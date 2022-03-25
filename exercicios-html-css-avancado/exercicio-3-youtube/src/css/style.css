@@ -6,9 +6,16 @@ html {
     max-width: 900px;
     background-color: #F7F7F7;
     display: grid;
+    grid-template-areas: "video-destaque propaganda"
+                         "video-destaque videos-sugeridos";
     grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
     gap: 20px;
     padding: 35px;
+}
+
+.video-destaque {
+    grid-area: video-destaque;
 }
 
 .video-destaque img {
@@ -26,12 +33,13 @@ html {
     margin-bottom: 10px;
 }
 
-.videos-sugeridos .propaganda {
-    margin-bottom: 20px;
+.propaganda {
+    grid-area: propaganda;
+    height: 56px;
 }
 
-.videos-sugeridos .videos { 
-    width: 270px;
+.videos-sugeridos {
+    grid-area: videos-sugeridos;
 }
 
 .videos-sugeridos .video {
@@ -39,10 +47,6 @@ html {
     gap: 5px;
     margin-bottom: 15px;
     max-width: 270px;
-}
-
-.videos-sugeridos .video img {
-    width: 100%;
 }
 
 .videos-sugeridos .video .titulo {
