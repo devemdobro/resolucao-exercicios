@@ -15,7 +15,7 @@
 */
 
 // Passo 1 - Pegar o elemento do botão aqui no JS
-const btnTrocaCor = document.querySelector(".btn-troca-cor");
+const btnTrocaCor = document.getElementById("btn-troca-cor");
 
 // Passo 2 - Pegar o elemento do quadrado azul aqui no JS
 const elementoAzul = document.querySelector(".azul");
